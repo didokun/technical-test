@@ -1,7 +1,8 @@
 import React, {FunctionComponent} from 'react';
+import Grid from "../../components/grid/Grid";
 
 const Home: FunctionComponent= () => {
-  return <h2>Home</h2>;
+  return <><Grid length={40}/></>;
 }
 
 export default Home;
