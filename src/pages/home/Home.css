@@ -1,0 +1,19 @@
+.form-length{
+    margin: 30px auto;
+    width: max-content;
+    display: flex;
+}
+
+.form-label{
+    margin-right: 10px;
+}
+.error-message{
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .form-length {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,239 @@
+#about {
+    font-weight: normal;
+    line-height: 30px;
+    color: #838C95;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: block;
+    background: #000524;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-image {
+    padding: 0 20px;
+    width: 25%;
+}
+
+.profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.about-description h2 {
+    color: #fff;
+}
+
+.about-description h3 {
+    color: #ddd;
+    margin: -10px 5px -5px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.resume-download {
+    margin-left: 40px;
+}
+
+.resume-download-button {
+    margin-top: 6px;
+    background: #444;
+    font: 16px/30px sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    transition: all .2s ease-in-out;
+    border-radius: 0px;
+}
+
+.resume-download-button:hover {
+    background: #fff;
+    color: #2B2B2B;
+}
+
+
+#education, #work, #skill {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #efefef;
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-container, .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container h2, .about-container h3 {
+        text-align: center;
+    }
+
+}
+
+#education:last-child, #work:last-child {
+    border-bottom: none;
+}
+
+
+.education-title, .work-title, .skill-title {
+    width: 20%;
+}
+
+.education-title h1, .work-title h1, .skill-title h1 {
+    font: 18px/24px sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #0762f9;
+    padding-bottom: 6px;
+    width: max-content;
+}
+
+.education-list, .work-list, .skill-list {
+    list-style: none;
+    width: 80%;
+
+}
+
+.education-item, .work-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.education-item:first-child, .work-item:first-child {
+    padding-top: 0;
+}
+
+.education-item:last-child, .work-item:last-child {
+    border-bottom: none;
+}
+
+.education-school {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    color: #313131;
+    margin-bottom: 12px;
+    font: 25px/30px sans-serif;
+    font-weight: bold;
+}
+
+.education-information, .work-information {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.education-information li, .work-information li {
+    margin-left: 5px;
+}
+
+.education-information li:before, .work-information li:before {
+    content: '-';
+    margin-right: 5px;
+}
+
+.education-information li:first-child:before, .work-information li:first-child:before {
+    display: none;
+}
+
+.work-job-title, .work-company-name {
+    font-weight: bold;
+}
+
+.skill-list {
+    margin-top: 60px;
+}
+
+.skill-list li {
+    position: relative;
+    margin-bottom: 60px;
+    background: #bdbdbd;
+    height: 42px;
+    border-radius: 0;
+}
+
+.skill-list li em {
+    font: 15px sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -36px;
+}
+
+.skill-list .bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container, .contact, #education, #work, #skill {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .about-container h2, .about-container h3 {
+        text-align: center;
+    }
+
+    .education-list, .work-list {
+        width: 100%;
+    }
+
+    .work-list ul {
+        margin: 0;
+        padding: 0;
+    }
+
+}

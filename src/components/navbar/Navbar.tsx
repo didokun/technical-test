@@ -27,10 +27,10 @@ export default function Navbar() {
             >
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" onClick={() => setIsNavExpanded(false)}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about" onClick={() => setIsNavExpanded(false)}>About</Link>
                     </li>
                 </ul>
             </div>
