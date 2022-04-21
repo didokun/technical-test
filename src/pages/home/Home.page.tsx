@@ -10,6 +10,7 @@ const Home: FunctionComponent = () => {
             setError('Length must be greater than 1');
             return;
         }
+        setError('');
         setLength(parseInt(value))
     }
     return <>
@@ -20,7 +21,7 @@ const Home: FunctionComponent = () => {
                 {error ? (<span className="error-message">{error}</span>) : null}
             </div>
         </div>
-        <Grid length={length}/>
+        {!error ?<Grid length={length}/>: null}
     </>;
 }
 
